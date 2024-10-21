@@ -1,0 +1,9 @@
+# ninja log v6
+4	1036	7511889273688294	CMakeFiles/TextClass.dir/main.cpp.obj	2154127e5322b9ec
+12	1039	7511889273768077	CMakeFiles/TextClass.dir/TextClass.cpp.obj	9beaac36edcf1e25
+1039	1241	7511889284044036	TextClass.exe	36e9546b78052999
+10	692	7511892755000030	CMakeFiles/TextClass.dir/main.cpp.obj	2154127e5322b9ec
+17	719	7511892755069794	CMakeFiles/TextClass.dir/TextClass.cpp.obj	9beaac36edcf1e25
+719	846	7511892762085779	TextClass.exe	36e9546b78052999
+8	731	7511893008418036	CMakeFiles/TextClass.dir/main.cpp.obj	2154127e5322b9ec
+732	905	7511893015657618	TextClass.exe	36e9546b78052999
