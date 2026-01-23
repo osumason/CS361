@@ -6,4 +6,5 @@
 int main()
 {
     std::cout << "hi" << '\n';
+    std::cout << "eyy i did it" << '\n';
 }
