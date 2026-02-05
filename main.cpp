@@ -1,10 +1,28 @@
-//
-// Created by mason on 1/23/2026.
-//
-#include <iostream>
+// main.cpp
+// Mason Antram
+// CS 361
 
-int main()
-{
-    std::cout << "hi" << '\n';
-    std::cout << "eyy i did it" << '\n';
+#include <iostream>
+#include <vector>
+
+#include "header.h"
+
+
+
+int main () {
+
+    std::vector<std::vector<char>> map;
+    int size = 25;
+
+
+    storytime();
+    sizemap(map, size);
+    makemap(map, size);
+    displaymap(map, size);
+
+
+    return 0;
 }
+
+
+
