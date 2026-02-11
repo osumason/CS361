@@ -1,3 +1,0 @@
-C:/Users/mason/CLionProjects/TextClass/cmake-build-debug/CMakeFiles/TextClass.dir
-C:/Users/mason/CLionProjects/TextClass/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/mason/CLionProjects/TextClass/cmake-build-debug/CMakeFiles/rebuild_cache.dir
