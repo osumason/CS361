@@ -7,6 +7,8 @@
 #include <chrono>
 #include "header.h"
 
+
+//having this function will allow for dynamic sizing of the map as the player enters buildings, dungeons, etc.
 void sizemap(std::vector<std::vector<char>>&map, int ylength, int xlength)
 {
     map.resize(ylength, std::vector<char>(xlength));
@@ -40,7 +42,7 @@ void makemap(std::vector<std::vector<char>>&map, int ylength, int xlength, int& 
 
     int count = 15;
     while (count > 0)
-    {
+    { //places rocks on the map
         int randomx = rand() % xlength;
         int randomy = rand() % ylength;
         if (map[randomy][randomx] == ' ')
@@ -58,6 +60,8 @@ void makemap(std::vector<std::vector<char>>&map, int ylength, int xlength, int& 
         if (map[1][randomx] == ' ')
         {
             map[1][randomx] = player;
+            xplayer = randomx;
+            yplayer = 1;
             count--;
         }
     }
@@ -65,6 +69,7 @@ void makemap(std::vector<std::vector<char>>&map, int ylength, int xlength, int& 
 
     void displaymap(std::vector<std::vector<char>>map, int ylength, int xlength)
     {
+    std::cout << '\n';
         for (int y = 0; y < ylength; y++)
         {
             for (int x = 0; x < xlength; x++)
@@ -74,3 +79,7 @@ void makemap(std::vector<std::vector<char>>&map, int ylength, int xlength, int& 
             std::cout << '\n';
         }
     }
+
+void updatemap(std::vector<std::vector<char>>&map, int y, int x, char asset) {
+    map[y][x] = asset;
+}

@@ -7,6 +7,8 @@
 #include "header.h"
 #include <chrono>
 #include <thread>
+#include <string>
+
 
 
 
@@ -19,22 +21,27 @@ void intro ()
     std::cout << "Welcome to The Epic Tale of JEFF \n"
     "Use WASD to navigate \n"
     "Press M to open the map \n"
-    "Would you like to hear the story of JEFF (Y/N)? \n";
+    "Would you like to hear the < 1 minute story of JEFF (Y/N)? \n";
 
-    while (!valid) {
+    while (!valid)
+        {
         std::cin >> input;
         input = std::toupper(input);
         if (input == 'Y')
         {
             storytime();
             valid = true;
-        } else if (input == 'N') {
+        }
+        else if (input == 'N')
+            {
             valid = true;
-        }else (std::cout << "Please press Y or N. \n");
+            }
+        else (std::cout << "Please press Y or N. \n");
     }
 }
 
-void storytime() {
+void storytime()
+{
     std::cout << "\n \n \n";
     std::cout << "In an age of extreme social disconnection, the world of Orrgun teetered on the brink of eternal silence. \n";
     std::this_thread::sleep_for(std::chrono::seconds(2));
